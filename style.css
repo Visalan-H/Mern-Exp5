@@ -222,9 +222,10 @@ a {
     background-color: #984cea;
     color: #fff;
     transition: all 0.3s;
-    min-width: min(100%,215px);
+    min-width: min(100%, 215px);
 }
-.fourth-first>*:hover{
+
+.fourth-first>*:hover {
     background-color: white;
     color: #984cea;
     transform: scale(1.05) rotate(3deg);
@@ -238,37 +239,64 @@ a {
     align-items: center;
     justify-content: space-evenly;
 }
-.fourth-second>*{
+
+.fourth-second>* {
     padding: 0 3%;
     min-height: 300px;
     flex-wrap: wrap;
     flex-basis: 50%;
-    border: 1px solid;
 }
+
 @media only screen and (max-width: 520px) {
-    .section-name h3{
+    .section-name h3 {
         font-size: 75%;
     }
 }
 
-.right>*{
+.right>* {
     margin-top: 30px;
 }
+
+#SERVICES {
+    background-color: #984cea;
+    border-color: #8d38e9 !important;
+}
+
+.progressbar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    /* Adds space between progress bars */
+}
+
 progress {
     width: 100%;
     height: 20px;
     appearance: none;
-    /* Removes default styling */
 }
 
-/* Style for WebKit browsers */
 progress::-webkit-progress-bar {
     background-color: #f3f3f3;
-    border-radius: 25px;
-    box-shadow: inset 0px 0px 5px #ccc;
+    box-shadow: inset 0px 0px 10px #ccc;
 }
 
-#SERVICES{
+progress::-webkit-progress-value {
     background-color: #984cea;
-    border-color: #8d38e9 !important;
+}
+
+progress::-moz-progress-bar {
+    background-color: #984cea;
+}
+
+.progressbar h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+    cursor: default;
+
 }
