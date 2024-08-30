@@ -188,9 +188,12 @@ a {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 444px) {
+@media only screen and (max-width: 576px) {
     .right img {
-        width: 100%;
+        display: none;
+    }
+    .left{
+        flex-basis: 100%;
     }
 }
 
@@ -224,7 +227,7 @@ a {
     background-color: #984cea;
     color: #fff;
     transition: all 0.3s;
-    min-width: min(100%, 215px);
+    min-width: min(100%, 230px);
 }
 
 .fourth-first>*:hover {
@@ -248,7 +251,6 @@ a {
     flex-wrap: wrap;
     flex-basis: 50%;
 }
-
 @media only screen and (max-width: 520px) {
     .section-name h3 {
         font-size: 75%;
@@ -294,13 +296,21 @@ progress::-moz-progress-bar {
     background-color: #984cea;
 }
 
-.progressbar h5 {
+.progressbar h6 {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
     font-weight: 500;
     z-index: 1;
     cursor: default;
+}
+@media only screen and (max-width: 992px) {
+    .fourth-second>* {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
