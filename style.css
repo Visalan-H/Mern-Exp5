@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 80%;
+}
+
+/* for hero section */
+.hero {
+    width: 100%;
+    /* display: flex; */
+}
+
+/* for nav fixed */
+.navfixed {
+    position: fixed;
+    background-color: rgb(91, 91, 91);
+    color: white;
+    width: 25%;
+    height: 100vh;
+}
+
+.navfixed>* {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+
+    & img {
+        width: 40%;
+    }
+}
+
+.nav-links>* {
+    width: 100%;
+    height: 70px;
+    margin-top: 1px;
+    text-align: center;
+    padding: 25px 5%;
+    background-color: rgb(73, 73, 73);
+}
+
+
+/* for the first section (rightside) */
+.first {
+    position: relative;
+    left: 25%;
+    width: 75%;
+    height: 100vh;
+    background-image: url(2416.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* color: white; */
+    text-align: center;
+
+    & * {
+        margin-top: 20px;
+    }
+}
+
+.first h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.first p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.first button {
+    padding: 5px 3%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(37, 133, 230);
+    font-weight: 600;
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.first button:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: #1139bc;
+}
+
+.first button:active {
+    transform: scale(0.8);
+    transition: transform 0.3s;
+}
+
+@media only screen and (min-width: 576px) {
+    .first h1 {
+        font-size: 3rem;
+    }
+
+    .first p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .logo h2 {
+        display: none;
+    }
+
+    .logo img {
+        height: 50px;
+        aspect-ratio: 1/1;
+    }
+}
+
+/* for third section */
+.third {
+    min-height: 70vh;
+    position: relative;
+    width: 75%;
+    left: 25%;
+    padding: 10px 2%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.presection {
+    margin-top: 50px;
+    position: relative;
+    width: 75%;
+    padding: 10px 2%;
+    left: 25%;
+
+    & .line {
+        width: 100%;
+        border: 3px solid;
+    }
+
+    & .section-name {
+        width: 25%;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+        background-color: black;
+    }
+}
+
+.left,
+.right {
+    flex-basis: 45%;
+}
+
+.left>* {
+    margin-top: 20px;
+}
+
+.right img {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 444px) {
+    .right img {
+        width: 100%;
+    }
+}
+
+/* for section 4 */
+.fourth {
+    position: relative;
+    flex-wrap: wrap;
+    width: 75%;
+    left: 25%;
+    padding: 10px 2%;
+}
+
+.fourth-first {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* padding: 2% 3%; */
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    &>* {
+        margin-top: 30px;
+    }
+}
+
+.fourth-first>* {
+    padding: 3%;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #000;
+    color: #fff;
+    min-width: min(100%,215px);
+}
+
+
+.fourth-second {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fourth-second>*{
+    min-height: 300px;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    border: 1px solid;
+}
+@media only screen and (max-width: 520px) {
+    .section-name h3{
+        font-size: 75%;
+    }
+}
+
+.right>*{
+    margin-top: 30px;
+}
+progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    /* Removes default styling */
+}
+
+/* Style for WebKit browsers */
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 5px #ccc;
+}
