@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 img {
@@ -139,6 +140,7 @@ a {
     }
 }
 
+
 /* for third section */
 .third {
     min-height: 70vh;
@@ -150,6 +152,28 @@ a {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.third .cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    & .card{
+        flex-basis: 30%;
+        text-align: center;
+        padding: 5% 0;
+        & img{
+            width: 70%;
+            aspect-ratio: 9/14;
+            border-radius: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 602px) {
+    .third .cards .card{
+        flex-basis: 100%;
+    }
 }
 
 .presection {
@@ -188,12 +212,14 @@ a {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 715px) {
     .right img {
-        display: none;
+        width: 90%;
+        box-shadow: none;
     }
-    .left{
+    .left,.right{
         flex-basis: 100%;
+        text-align: center;
     }
 }
 
@@ -308,7 +334,7 @@ progress::-moz-progress-bar {
     z-index: 1;
     cursor: default;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 715px) {
     .fourth-second>* {
         flex-basis: 100%;
         margin-bottom: 20px;
