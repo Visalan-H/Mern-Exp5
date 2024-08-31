@@ -153,25 +153,29 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.third .cards{
+
+.third .cards {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    & .card{
+
+    & .card {
         flex-basis: 30%;
         text-align: center;
         padding: 5% 0;
-        & img{
+
+        & img {
             width: 70%;
             aspect-ratio: 9/14;
             border-radius: 10px;
         }
     }
 }
+
 @media only screen and (max-width: 602px) {
-    .third .cards .card{
+    .third .cards .card {
         flex-basis: 100%;
     }
 }
@@ -217,14 +221,17 @@ a {
         width: 90%;
         box-shadow: none;
     }
-    .left,.right{
+
+    .left,
+    .right {
         flex-basis: 100%;
         text-align: center;
     }
 }
 
 /* for section 4 */
-.fourth {
+.fourth,
+.fifth {
     position: relative;
     flex-wrap: wrap;
     width: 75%;
@@ -277,9 +284,10 @@ a {
     flex-wrap: wrap;
     flex-basis: 50%;
 }
+
 @media only screen and (max-width: 520px) {
     .section-name h3 {
-        font-size: 75%;
+        font-size: 10px;
     }
 }
 
@@ -295,6 +303,11 @@ a {
 #ABOUT {
     background-color: #e9b144;
     border-color: #e9b144;
+}
+
+#PORTFOLIO {
+    background-color: #38e395;
+    border-color: #38e395;
 }
 
 .progressbar {
@@ -334,9 +347,63 @@ progress::-moz-progress-bar {
     z-index: 1;
     cursor: default;
 }
+
 @media only screen and (max-width: 715px) {
     .fourth-second>* {
         flex-basis: 100%;
         margin-bottom: 20px;
     }
 }
+
+.fifth-first {
+    padding: 10px 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects {
+    margin-top: 20px;
+    flex-basis: 30%;
+    padding: 3%;
+    text-align: center;
+
+    & img {
+        width: 90%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .fifth-first .projects {
+        flex-basis: 50%;
+    }
+}
+
+.fifth-second {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    & button {
+        padding: 10px 3%;
+        background-color: #38e395;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #38e395;
+        border-radius: 5px;
+    }
+
+    & button:hover {
+        background-color: black;
+        color: #38e395;
+        transform: scale(0.95);
+        transition: all 0.3s ease;
+    }
+
+    & button:active {
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+    }
+}
+
