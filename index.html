@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>RESPONSIVE LAYOUT</title>
 </head>
 
@@ -20,8 +21,8 @@
                 <div><a href="#Home">HOME</a></div>
                 <div><a href="#About">ABOUT</a></div>
                 <div><a href="#Services">SERVICES</a></div>
-                <div><a href="#">PORTFOLIO</a></div>
-                <div><a href="#">CONTACT</a></div>
+                <div><a href="#Portfolio">PORTFOLIO</a></div>
+                <div><a href="#Contact">CONTACT</a></div>
             </div>
 
         </div>
@@ -151,6 +152,80 @@
             <button>LOAD MORE</button>
         </div>
     </section>
+    <div class="presection" id="Contact">
+        <div id="CONTACT" class="line"></div>
+        <div id="CONTACT" class="section-name">
+            <h3>CONTACT</h3>
+        </div>
+    </div>
+    <section class="sixth">
+        <div class="map">
+            <iframe width="100%" height="450" scrolling="no" loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=80.015,13.024,80.017,13.027&layer=mapnik&marker=13.02592,80.01639"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="form">
+            <form>
+                <div class="Name">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="Email">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div class="Subject">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="Message">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Type your message..."></textarea>
+                </div>
+            </form>
+            <div class="buttoncont">
+                <button>SEND MESSAGE</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <div class="social-icon">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 <span>Vizz</span></p>
+    </footer>
+    <script>
+        // this code is to reload the page so that map api works correctly :)
+        if (!sessionStorage.getItem('reloaded')) {
+            sessionStorage.setItem('reloaded', 'true');
+            location.reload();
+        }
+    </script>
 </body>
 
 </html>
