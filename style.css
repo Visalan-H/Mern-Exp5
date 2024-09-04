@@ -39,6 +39,7 @@ a {
     margin-top: 50px;
 }
 
+
 .logo {
     cursor: pointer;
     background-color: black;
@@ -62,6 +63,70 @@ a {
     text-align: center;
     padding: 25px 5%;
     background-color: rgb(73, 73, 73);
+    & a {
+        transition: all 0.3s;
+    }
+}
+#HOME1 {
+    border-left: 5px solid rgb(37, 133, 230);
+    border-right: 5px solid transparent;
+}
+
+#HOME1:hover {
+    & a {
+        color: rgb(37, 133, 230);
+        transition: all 0.3s;
+        font-size: 14px;
+    }
+}
+
+#SERVICES1 {
+    border-left: 5px solid #984cea;
+    border-right: 5px solid transparent;
+}
+
+#SERVICES1:hover {
+    & a {
+        color: #984cea;
+        transition: all 0.3s;
+        font-size: 14px;
+    }
+}
+#ABOUT1 {
+    border-left: 5px solid #e9b144;
+    border-right: 5px solid transparent;
+}
+
+#ABOUT1:hover {
+    & a {
+        color: #e9b144;
+        transition: all 0.3s;
+        font-size: 14px;
+    }
+}
+#PORTFOLIO1{
+    border-left: 5px solid #38e395;
+    border-right: 5px solid transparent;
+}
+
+#PORTFOLIO1:hover {
+    & a {
+        color: #38e395;
+        transition: all 0.3s;
+        font-size: 13px;
+    }
+}
+#CONTACT1 {
+    border-left: 5px solid #e2397c;
+    border-right: 5px solid transparent;
+}
+
+#CONTACT1:hover {
+    & a {
+        color: #e2397c;
+        transition: all 0.3s;
+        font-size: 14px;
+    }
 }
 
 
@@ -330,12 +395,14 @@ progress {
 }
 
 progress::-webkit-progress-bar {
+    border-radius: 5px;
     background-color: #f3f3f3;
-    box-shadow: inset 0px 0px 10px #ccc;
+    box-shadow: inset 0 0 10px #a4a5a4;
 }
 
 progress::-webkit-progress-value {
     background-color: #984cea;
+    border-radius: 5px;
 }
 
 progress::-moz-progress-bar {
@@ -417,11 +484,13 @@ progress::-moz-progress-bar {
         transition: all 0.3s ease;
     }
 }
+
 @media only screen and (max-width: 576px) {
-    .sixth form>*{
+    .sixth form>* {
         flex-basis: 100%;
     }
-    .buttoncont button{
+
+    .buttoncont button {
         /* text-align: center; */
         width: 100%;
     }
@@ -438,8 +507,9 @@ progress::-moz-progress-bar {
     }
 }
 
-.sixth .form .buttoncont{
+.sixth .form .buttoncont {
     padding: 3%;
+
     & button {
         padding: 10px 3%;
         background-color: #e3387c;
@@ -493,11 +563,13 @@ progress::-moz-progress-bar {
         margin-bottom: 20px;
     }
 }
-footer{
+
+footer {
     padding: 0 1%;
     height: 30vh;
     background-color: #31363a;
 }
+
 .social {
     height: 15vh;
     background-color: #4b5056;
@@ -506,6 +578,7 @@ footer{
     justify-content: center;
     margin-bottom: 10vh;
 }
+
 .social-icon {
     cursor: pointer;
     width: 40px;
@@ -519,14 +592,17 @@ footer{
     margin-right: 5px;
     transition: transform 0.3s ease;
 }
-.social-icon:hover{
+
+.social-icon:hover {
     filter: invert(1);
     transform: translateY(-10px);
     transition: transform 0.3s ease;
 }
-footer p{
+
+footer p {
     color: #868b8d;
-    & span{
+
+    & span {
         color: white;
     }
 }
