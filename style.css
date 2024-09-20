@@ -589,8 +589,10 @@ footer {
     background-color: #31363a;
     text-align: center;
     font-size: 20px;
-    margin-right: 5px;
     transition: transform 0.3s ease;
+}
+.social-icon:not(.social-icon:last-of-type){
+    margin-right: 5px;
 }
 
 .social-icon:hover {
@@ -604,5 +606,14 @@ footer p {
 
     & span {
         color: white;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .first,.third,.presection,.fourth,.fifth,.sixth,footer{
+        width: 80%;
+        left: 20%;
+    }
+    .navfixed{
+        width: 20%;
     }
 }
